@@ -1,0 +1,23 @@
+<div *ngIf="isValid;else other_content">
+<table class="table">
+    <thead>
+        <tr >
+            <th class="text-center">Branch</th>
+            <th class="text-center">City</th>
+            <th class="text-center">Lat</th>
+            <th class="text-center">Long</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of mdata">
+            <td>{{item.branch}}</td>
+            <td >{{item.city}}</td>
+            <td >{{item.lat}}</td>
+            <td >{{item.long}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<ng-template #other_content>
+No branches in the next 50,000 km
+</ng-template>

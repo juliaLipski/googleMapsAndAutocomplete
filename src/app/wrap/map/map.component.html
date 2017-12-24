@@ -1,0 +1,4 @@
+<agm-map [latitude]="lat" [longitude]="long" >loading..
+  <agm-marker [latitude]="lat" [longitude]="long"></agm-marker>
+  <agm-marker  *ngFor="let m of mdata; let i = index" [latitude]="m.lat" [longitude]="m.long"></agm-marker>
+</agm-map>

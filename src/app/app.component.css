@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+h2{
+  text-align: center;
+}
+header{
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 30px;
+  color: gray;
+  text-align: center; 
+  background-color: #F4EEF6;
+}    
